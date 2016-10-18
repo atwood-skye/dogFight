@@ -6,6 +6,6 @@ $('img.dog').click(function(){
   $('ul.dog').append('<li>Bang!!!</li>');
 });
 
-$('#secret-corgi').click(function(){
-  $(this).append('<img src="img/secret-corgi.jpg">')
-})
+$('#secret-corgi').one('click', function(){
+  $(this).append('<img id="corgi" src="img/secret-corgi.jpg">');
+});
